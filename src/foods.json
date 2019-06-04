@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Agrest",
+        "icon": "gooseberry.svg",
+        "buyDescription": "Zbieramy je, gdy są miękkie. ",
+        "availability": [0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0]
+        
+    },
+    {
+        "name": "Aronia",
+        "icon": "blueberries.svg",
+        "buyDescription":"Zbieramy je, gdy są miękkie. ",
+        "availability": [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+    }
+]
