@@ -1,8 +1,16 @@
 [
     {
+        "name": "Ananas",
+        "icon": "pineapple.svg",
+        "buyDescription": "Świeży dojrzały ananas jest bardzo aromatyczny, ma sztywne i soczyste liście, zielone z lekko sinym nalotem. Po pociągnięciu wychodzą tylko pojedyncze liście z samego szczytu.",
+        "storeDescription": "Pozostaje świeży przez tydzień jeśli jest przechowywany w suchym i chłodnym pomieszczeniu (koniecznie bez opakowania)",
+        "availability": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    },
+    {
         "name": "Agrest",
         "icon": "gooseberry.svg",
         "buyDescription": "Zbieramy je, gdy są miękkie. ",
+        "storeDescription": "",
         "availability": [0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0]
         
     },
@@ -10,6 +18,7 @@
         "name": "Aronia",
         "icon": "blueberries.svg",
         "buyDescription":"Zbieramy je, gdy są miękkie. ",
+        "storeDescription": "",
         "availability": [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     }
 ]
