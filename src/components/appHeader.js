@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Input, Sticky, Header, Button } from 'semantic-ui-react'
+import { Menu, Image, Container, Input, Button } from 'semantic-ui-react'
 
 class AppHeader extends React.Component {
   constructor(props) {
@@ -31,24 +31,23 @@ class AppHeader extends React.Component {
   render() {
     //const { name } = this.props;
     return (
-      <Sticky>
-        <Grid>
-          <Grid.Row stretched>
-            <Grid.Column floated='left' width={2}>
-              <Header as='h3'>Kalendarz sezonowy</Header>
-            </Grid.Column>
-            <Grid.Column floated='right' width={11}>
-              <Input icon='search' placeholder='Wyszukaj...'
-                value={this.state.value} onChange={this.handleChange} />
-            </Grid.Column>
-            <Grid.Column floated='right' width={3}>
-              <Button toggle active={this.state.onlyCurrent} onClick={this.handleClick}>
-                Tylko aktualnie dostępne
-      </Button>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Sticky>
+      <Menu fixed='top'>
+      <Container>
+        <Menu.Item as='a' header>
+          <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+          Kalendarz sezonowy
+        </Menu.Item>
+        <Menu.Item wide="true">
+          <Input icon='search' placeholder='Wyszukaj...'
+                 value={this.state.value} onChange={this.handleChange} />
+        </Menu.Item>
+        <Menu.Item>
+        <Button toggle active={this.state.onlyCurrent} onClick={this.handleClick}>
+                 Tylko aktualnie dostępne
+       </Button>
+        </Menu.Item>
+      </Container>
+</Menu>
     );
   }
 }

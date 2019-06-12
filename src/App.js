@@ -33,7 +33,7 @@ class App extends React.Component {
           <Grid.Column>
             <AppHeader onSearchChange={this.onSearchChange}></AppHeader>
             
-            <Item.Group divided>
+            <Item.Group divided style={{ marginTop: '7em' }}>
               {
                 foods.filter((x) => x.name.toLowerCase().indexOf(this.state.searchPhrase.toLowerCase()) !== -1 && (!this.state.onlyCurrent || !!x.availability[new Date().getMonth()]))
                   .map(function (food) {
