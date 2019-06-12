@@ -39,7 +39,8 @@ class AppHeader extends React.Component {
         </Menu.Item>
         <Menu.Item wide="true">
           <Input icon='search' placeholder='Wyszukaj...'
-                 value={this.state.value} onChange={this.handleChange} />
+                 value={this.state.value} onChange={this.handleChange}
+                  />
         </Menu.Item>
         <Menu.Item>
         <Button toggle active={this.state.onlyCurrent} onClick={this.handleClick}>
