@@ -37,7 +37,7 @@ class AppHeader extends React.Component {
           <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
           Kalendarz sezonowy
         </Menu.Item>
-        <Menu.Item wide="true">
+        <Menu.Item wide="true" style={{flexGrow:1}}>
           <Input icon='search' placeholder='Wyszukaj...'
                  value={this.state.value} onChange={this.handleChange}
                   />
