@@ -31,7 +31,7 @@ class AppHeader extends React.Component {
   render() {
     //const { name } = this.props;
     return (
-      <Menu fixed='top'>
+      <Menu fixed='top' stackable>
       <Container>
         <Menu.Item as='a' header>
           <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />

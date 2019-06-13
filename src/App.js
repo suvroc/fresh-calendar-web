@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import foods from './foods.json';
 import 'semantic-ui-css/semantic.min.css'
-import { Item, Grid } from 'semantic-ui-react';
+import { Item, Grid, Segment } from 'semantic-ui-react';
 import AppHeader from './components/appHeader';
 import MonthBox from './components/monthBox';
 
@@ -29,11 +29,10 @@ class App extends React.Component {
  
     return (
       <div className="App">
-        <Grid columns={1} padded>
           <Grid.Column>
             <AppHeader onSearchChange={this.onSearchChange}></AppHeader>
             
-            <Item.Group divided style={{ marginTop: '7em' }}>
+            <Item.Group divided style={{ marginTop: '8em' }}>
               {
                 foods.filter((x) => x.name.toLowerCase().indexOf(this.state.searchPhrase.toLowerCase()) !== -1 && (!this.state.onlyCurrent || !!x.availability[new Date().getMonth()]))
                   .map(function (food) {
@@ -49,7 +48,7 @@ class App extends React.Component {
                       </Item.Meta>
                       <Item.Description>{food.storeDescription}</Item.Description>
                       <Item.Extra>
-                        <Grid columns={6}>
+                        <Grid columns={6} doubling>
                           <Grid.Column><MonthBox name="Styczeń" active={!!food.availability[0]} number={0}></MonthBox></Grid.Column>
                           <Grid.Column><MonthBox name="Luty" active={!!food.availability[1]} number={1}></MonthBox></Grid.Column>
                           <Grid.Column><MonthBox name="Marzec" active={!!food.availability[2]} number={2}></MonthBox></Grid.Column>

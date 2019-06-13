@@ -3,7 +3,8 @@ import { Segment } from 'semantic-ui-react'
 
 class MonthBox extends React.Component {
     render() {
-        const { name, active } = this.props;
+        const { name, active, number } = this.props;
+
         if (active) {
             return <Segment inverted color="green">
                 {name}
