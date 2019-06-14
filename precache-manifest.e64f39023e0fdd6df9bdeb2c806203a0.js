@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1a1a595dc1048aef60eadd7e2940370",
+    "revision": "1f91bba77c8f691dd210467b1ffca70e",
     "url": "/fresh-calendar-web/index.html"
   },
   {
