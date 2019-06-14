@@ -29,12 +29,17 @@ class AppHeader extends React.Component {
   }
 
   render() {
+
+    let iconDirectory = '/fresh-calendar-web';
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      iconDirectory = '';
+    }
     //const { name } = this.props;
     return (
       <Menu fixed='top' stackable>
       <Container>
         <Menu.Item as='a' header>
-          <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+          <Image size='mini' src={ iconDirectory + '/icon.svg'} style={{ marginRight: '1.5em' }} />
           Kalendarz sezonowy
         </Menu.Item>
         <Menu.Item wide="true" style={{flexGrow:1}}>

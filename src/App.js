@@ -33,12 +33,12 @@ class App extends React.Component {
           <Grid.Column>
             <AppHeader onSearchChange={this.onSearchChange}></AppHeader>
             
-            <Item.Group divided style={{ marginTop: '8em' }}>
+            <Item.Group divided className="content">
               {
                 foods.filter((x) => x.name.toLowerCase().indexOf(this.state.searchPhrase.toLowerCase()) !== -1 && (!this.state.onlyCurrent || !!x.availability[new Date().getMonth()]))
                   .map(function (food) {
                   return  <Item key={food.name}>
-                    <Item.Image src={iconDirectory + food.icon} />
+                    <Item.Image src={iconDirectory + food.icon} size="small"/>
 
                     <Item.Content>
                       <Item.Header as='a'>{food.name}</Item.Header>
