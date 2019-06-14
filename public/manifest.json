@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fresh calendar",
+  "name": "Kalendarz warzy sezonowych",
   "icons": [
     {
       "src": "favicon.ico",
